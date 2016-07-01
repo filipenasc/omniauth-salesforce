@@ -93,5 +93,9 @@ module OmniAuth
       default_options[:client_options][:site] = 'https://prerellogin.pre.salesforce.com/'
     end
 
+    class SalesforceTls1Test < OmniAuth::Strategies::Salesforce
+      default_options[:client_options][:site] = 'https://tls1test.salesforce.com'
+    end
+
   end
 end
